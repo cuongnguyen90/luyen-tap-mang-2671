@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body onload="check()">
+<script>
+    function check() {
+        number = Array();
+        for (i = 0 ; i<10;i++){
+            number[i] = Math.floor(Math.random()*15);
+        }
+        _b = 0;
+        for (j = 0;j <10;j++){
+            if (number[j]>=10){
+                _b++;
+            }
+        }
+        document.write("Trong day so "+number+"<br/>");
+        document.write("Co "+_b+" so lon hon hoac bang 10");
+    }
+
+</script>
+</body>
+</html>
